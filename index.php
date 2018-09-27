@@ -19,20 +19,22 @@ if (isset($_GET["p"])) {
 
 <body>
 <header>
-
-    <div id="header-vp">
-        <div id="logo"><img src="images/logonew.gif"/></div>
-        <div style="margin-left: 180px ; align-content: space-around">
-            <!--block/menu.php-->
-            <?php
-            require "blocks/menu.php";
-            ?>
+    <nav>
+        <div id="header-vp">
+            <div id="logo"><img src="images/logonew.gif"/></div>
+            <div style="margin-left: 180px ; align-content: space-around">
+                <!--block/menu.php-->
+                <?php
+                require "blocks/menu.php";
+                ?>
+            </div>
         </div>
-    </div>
+    </nav>
+
+
 </header>
 
 <div id="wrap-vp">
-
     <div id="midheader-vp">
         <div id="left">
             <ul class="list_arrow_breakumb">
@@ -40,7 +42,9 @@ if (isset($_GET["p"])) {
                     <a href="javascript:;">Trang nhất</a>
                     <span class="arrow_breakumb">&nbsp;</span></li>
             </ul>
+
         </div>
+
         <div id="right">
             <!--blocks/thongtinchung.php-->
             <?php
@@ -48,7 +52,9 @@ if (isset($_GET["p"])) {
             ?>
         </div>
     </div>
-    <div class="clear"></div>
+    <div class="clear">
+
+    </div>
 
     <div id="slide-vp">
         <!--blocks/top_trang_chu.php-->
@@ -100,8 +106,9 @@ if (isset($_GET["p"])) {
 
     </div>
     <!--blocks/thongtindoanhnghiep.php-->
+    <div class="clear"></div>
+    <div class="clear"></div>
     <div id="thongtin">
-
         <?php
         require "blocks/thongtindoanhnghiep.php";
         ?>

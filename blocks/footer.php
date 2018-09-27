@@ -16,7 +16,7 @@
         <ul class="ulBlockMenu">
             <li class="liFirst">
                 <h2>
-                    <a style="color: #bdd8bf ;font-size: 20px" class="mnu_giaoduc" href="/tin-tuc/giao-duc/"><?php
+                    <a style="color: #bdd8bf ;font-size: 20px" class="mnu_giaoduc"><?php
                         echo $row_theloai['TenTL']
                         ?></a>
                 </h2>
@@ -28,7 +28,7 @@
                 ?>
                 <li>
 
-                    <a style="color: #F8FFF7" class="mnu_giaoduc" href="./index.php?p=tintrongloai&idLT=<?php
+                    <a style="color: #F8FFF7" class="mnu_giaoduc" href="index.php?p=tintrongloai&idLT=<?php
                     echo $row_loaitin['idLT'] ?>"><?php
                         echo $row_loaitin['Ten']
                         ?></a>

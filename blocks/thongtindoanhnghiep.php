@@ -1,4 +1,4 @@
-<div class="thongtin-background">Thông tin doanh nghiệp</div>
+<div class="thongtin-background" >Thông tin doanh nghiệp</div>
 <div class="thongtin-content">
 	<!-- it works the same with all jquery version from 1.x to 2.x -->
     <script type="text/javascript" src="jquery-slider-master/js/jquery-1.9.1.min.js"></script>
@@ -18,7 +18,7 @@
                 $ArrowKeyNavigation: true,   			            //[Optional] Allows keyboard (arrow key) navigation or not, default value is false
                 $SlideDuration: 300,                                //[Optional] Specifies default duration (swipe) for slide in milliseconds, default value is 500
                 $MinDragOffsetToSlide: 20,                          //[Optional] Minimum drag offset to trigger slide , default value is 20
-                $SlideWidth: 200,                                   //[Optional] Width of every slide in pixels, default value is width of 'slides' container
+                $SlideWidth: 400,                                   //[Optional] Width of every slide in pixels, default value is width of 'slides' container
                 //$SlideHeight: 150,                                //[Optional] Height of every slide in pixels, default value is height of 'slides' container
                 $SlideSpacing: 3, 					                //[Optional] Space between each slide in pixels, default value is 0
                 $DisplayPieces: 4,                                  //[Optional] Number of pieces to display (the slideshow would be disabled if the value is set to greater than 1), the default value is 1
@@ -73,7 +73,7 @@
     </script>
     <!-- Jssor Slider Begin -->
     <!-- You can move inline styles to css file or css block. -->
-    <div id="slider1_container" style="position: relative; top: 0px; left: 0px; width: 1000px; height: 100px; overflow: hidden;">
+    <div id="slider1_container" style="position: relative; top: 0px; left: 0px; width: 1100px; height: 150px; overflow: hidden;">
 
         <!-- Loading Screen -->
         <div u="loading" style="position: absolute; top: 0px; left: 0px;">
@@ -86,7 +86,7 @@
         </div>
 
         <!-- Slides Container -->
-        <div u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 1000px; height: 90px; overflow: hidden;">
+        <div u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 1100px; height: 130px; overflow: hidden;">
            <?php
            $quangcao = QuangCao(2);
            while($row_quangcao = mysqli_fetch_array($quangcao)) {
