@@ -32,7 +32,7 @@ function TinXemNhieuNhat()
 {
     require("dbCon.php");
     //        $con = mysqli_connect("localhost","root","","quanlidatabasehotnew");
-    $qr = "SELECT * FROM `tin` ORDER BY SoLanXem DESC LIMIT 0,6";
+    $qr = "SELECT * FROM `tin` ORDER BY SoLanXem DESC LIMIT 0,8";
 
     return mysqli_query($conn, $qr);
 
@@ -72,7 +72,7 @@ function TinMoiNhat_TheoLoaiTin_NhieuTin($idLT)
 {
     require("dbCon.php");
     //        $con = mysqli_connect("localhost","root","","quanlidatabasehotnew");
-    $qr = "SELECT * FROM tin WHERE idLT = $idLT ORDER BY idTin DESC LIMIT 1,6";
+    $qr = "SELECT * FROM tin WHERE idLT = $idLT ORDER BY idTin DESC LIMIT 1,5";
     return mysqli_query($conn, $qr);
 }
 
@@ -140,6 +140,15 @@ function ChiTietTin_TheoIdLoaiTin($idTin)
 {
     require("dbCon.php");
     $qr = "SELECT * FROM tin WHERE idTin=$idTin";
+
+    return mysqli_query($conn, $qr);
+}
+
+
+function DanhSachTin_NgauNhien_CungLoai($idTin,$idLT)
+{
+    require("dbCon.php");
+    $qr = "SELECT * FROM tin WHERE idTin<>$idTin AND idLT = $idLT ORDER BY RAND() LIMIT 6";
 
     return mysqli_query($conn, $qr);
 }

@@ -1,3 +1,4 @@
+
 <?php
 $theloai = DanhSachTheLoai();
 while ($row = mysqli_fetch_array($theloai)) {

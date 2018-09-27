@@ -18,28 +18,29 @@ if (isset($_GET["p"])) {
 </head>
 
 <body>
-<header>
-    <nav>
-        <div id="header-vp">
-            <div id="logo"><img src="images/logonew.gif"/></div>
-            <div style="margin-left: 180px ; align-content: space-around">
-                <!--block/menu.php-->
-                <?php
-                require "blocks/menu.php";
-                ?>
+<div>
+    <header>
+        <nav>
+            <div id="header-vp">
+                <div  id="logo"><img  src="images/logonew.gif"/></div>
+                <div style="margin-left: 180px ; align-content: space-around">
+                    <!--block/menu.php-->
+                    <?php
+                    require "blocks/menu.php";
+                    ?>
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
 
-
-</header>
+    </header>
+</div>
 
 <div id="wrap-vp">
     <div id="midheader-vp">
         <div id="left">
             <ul class="list_arrow_breakumb">
                 <li class="start">
-                    <a href="javascript:;">Trang nhất</a>
+                    <a href="./">Trang nhất</a>
                     <span class="arrow_breakumb">&nbsp;</span></li>
             </ul>
 

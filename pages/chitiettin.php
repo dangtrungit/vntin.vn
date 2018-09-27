@@ -6,7 +6,9 @@ if (isset($_GET["idTin"])) {
     $idTin = 1;
 }
 $tinchitiet = ChiTietTin_TheoIdLoaiTin($idTin);
+
 $row = mysqli_fetch_array($tinchitiet);
+$idLT = $row['idLT']
 ?>
 
 <!--<h1 class="title">-->
@@ -17,7 +19,7 @@ $row = mysqli_fetch_array($tinchitiet);
 <!--    --><?php
 //    echo $row['TomTat']
 //    ?><!--</div>-->
-<div class="chitiet">
+<div class="chitiet" style="font-size: 18px;letter-spacing: 0.5px;">
 
     <!--noi dung-->
     <?php
@@ -72,31 +74,22 @@ $row = mysqli_fetch_array($tinchitiet);
     <div class="clear"></div>
     <div id="tincungloai">
         <div class="clear"></div>
-        <ul>
+        <?php
+            $tinngaunhien = DanhSachTin_NgauNhien_CungLoai($idTin,$idLT);
+            while ($row_ngaunhien = mysqli_fetch_array($tinngaunhien)) {
+                ?>
+                <ul>
+                    <li>
+                        <a href="index.php?p=chitiettin&idTin=<?php echo $row_ngaunhien['idTin']?>"><img src="upload/tintuc/<?php echo $row_ngaunhien['urlHinh']?>"
+                                         alt="<?php echo $row_ngaunhien['TieuDe']?>"></a> <br/>
+                        <a class="title" href="index.php?p=chitiettin&idTin=<?php echo $row_ngaunhien['idTin']?>"><?php echo $row_ngaunhien['TieuDe']?></a>
+                        <span class="no_wrap">
+                    </li>
 
-            <li>
-                <a href="#"><img src="upload/tintuc/19-2436-1406522072_300x180.jpg"
-                                 alt="Người nhà nạn nhân MH370 an ủi thân nhân hành khách MH17"></a> <br/>
-                <a class="title" href="#">Người nhà nạn nhân MH370 an ủi thân nhân hành khách MH17</a>
-                <span class="no_wrap">
-            </li>
-
-            <li>
-                <a href="#"><img src="upload/tintuc/19-2436-1406522072_300x180.jpg"
-                                 alt="Người nhà nạn nhân MH370 an ủi thân nhân hành khách MH17"></a> <br/>
-                <a class="title" href="#">Người nhà nạn nhân MH370 an ủi thân nhân hành khách MH17</a>
-                <span class="no_wrap">
-            </li>
-
-            <li>
-                <a href="#"><img src="upload/tintuc/19-2436-1406522072_300x180.jpg"
-                                 alt="Người nhà nạn nhân MH370 an ủi thân nhân hành khách MH17"></a> <br/>
-                <a class="title" href="#">Người nhà nạn nhân MH370 an ủi thân nhân hành khách MH17</a>
-                <span class="no_wrap">
-            </li>
-
-
-        </ul>
+                </ul>
+                <?php
+            }
+        ?>
     </div>
     <div class="clear"></div>
 
