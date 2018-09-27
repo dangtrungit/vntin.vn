@@ -1,22 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="55ceb6fc-9bbb-4776-bfc6-e6b0cf93f9b7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/quanlidatabasehotnew.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blocks/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/footer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blocks/menu.php" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/menu.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blocks/thongtinchung.php" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/thongtinchung.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blocks/thongtindoanhnghiep.php" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/thongtindoanhnghiep.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blocks/top_trang_chu.php" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/top_trang_chu.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/layout.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/layout.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ddsmoothmenu.css" beforeDir="false" afterPath="$PROJECT_DIR$/ddsmoothmenu.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/trangchu.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/trangchu.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/chitiettin.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/chitiettin.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/tintrongloai.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/tintrongloai.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/trangchu.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/trangchu.php" afterDir="false" />
-    </list>
+    <list default="true" id="55ceb6fc-9bbb-4776-bfc6-e6b0cf93f9b7" name="Default Changelist" comment="Sửa giao diện tùm lum" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,6 +81,7 @@
           <entry key="gif" value="1" />
           <entry key="php" value="38" />
           <entry key="rnc" value="3" />
+          <entry key="sql" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -105,35 +91,39 @@
           <entry key="Image" value="1" />
           <entry key="PHP" value="38" />
           <entry key="RNG Compact" value="3" />
+          <entry key="SQL" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="css" value="607" />
           <entry key="php" value="2264" />
+          <entry key="txt" value="42" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="607" />
           <entry key="PHP" value="2264" />
+          <entry key="PLAIN_TEXT" value="42" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pages/tintrongloai.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="59" column="62" selection-start-line="59" selection-start-column="62" selection-end-line="59" selection-end-column="62" />
+            <state relative-caret-position="-758">
+              <caret line="22" column="40" selection-start-line="22" selection-start-column="40" selection-end-line="22" selection-end-column="40" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="e#849#855#1#HTML" expanded="true" />
                 <element signature="e#1138#1144#1#HTML" expanded="true" />
                 <element signature="e#1425#1431#1#HTML" expanded="true" />
                 <element signature="n#style#0;n#a#0;n#h3#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#a#0;n#h3#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -160,10 +150,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/blocks/thongtindoanhnghiep.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="178">
+            <state relative-caret-position="268">
               <caret line="88" column="111" selection-start-line="88" selection-start-column="111" selection-end-line="88" selection-end-column="111" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#1;n#!!top" expanded="true" />
@@ -201,15 +191,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="144">
               <caret line="8" column="56" selection-start-line="8" selection-start-column="56" selection-end-line="8" selection-end-column="56" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/blocks/footer.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="18" column="82" selection-start-line="18" selection-start-column="82" selection-end-line="18" selection-end-column="82" />
             </state>
           </provider>
         </entry>
@@ -304,7 +285,7 @@
     </servers>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP on XAMPP" />
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="72" />
     <option name="y" value="44" />
     <option name="width" value="1346" />
@@ -420,12 +401,20 @@
       <workItem from="1537837265391" duration="24055000" />
       <workItem from="1537936274216" duration="21158000" />
       <workItem from="1538004576575" duration="9746000" />
-      <workItem from="1538020584315" duration="18268000" />
+      <workItem from="1538020584315" duration="18719000" />
     </task>
+    <task id="LOCAL-00001" summary="Sửa giao diện tùm lum">
+      <created>1538044453111</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1538044453112</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="80433000" />
+    <option name="totallyTimeSpent" value="80884000" />
   </component>
   <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
@@ -438,11 +427,11 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49880096" visible="true" weight="0.21633889" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49880096" visible="true" weight="0.21633889" />
       <window_info id="Structure" order="1" sideWeight="0.50119907" side_tool="true" weight="0.2881997" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" weight="0.32850242" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32850242" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32850242" />
@@ -451,7 +440,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.23349437" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="8" visible="true" weight="0.32850242" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="PHP-CGI Server" order="10" />
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.32850242" />
@@ -489,6 +478,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Sửa giao diện tùm lum" />
+    <option name="LAST_COMMIT_MESSAGE" value="Sửa giao diện tùm lum" />
   </component>
   <component name="editorHistoryManager">
     <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/mysqli/mysqli.php">
@@ -659,20 +652,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pages/tintrongloai.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="59" column="62" selection-start-line="59" selection-start-column="62" selection-end-line="59" selection-end-column="62" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="e#849#855#1#HTML" expanded="true" />
-            <element signature="e#1138#1144#1#HTML" expanded="true" />
-            <element signature="e#1425#1431#1#HTML" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#h3#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/blocks/thongtinchung.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
@@ -728,15 +707,35 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/quanlidatabasehotnew.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-37529" />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/blocks/thongtindoanhnghiep.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
+        <state relative-caret-position="268">
           <caret line="88" column="111" selection-start-line="88" selection-start-column="111" selection-end-line="88" selection-end-column="111" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#1;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/tintrongloai.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-758">
+          <caret line="22" column="40" selection-start-line="22" selection-start-column="40" selection-end-line="22" selection-end-column="40" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="e#849#855#1#HTML" expanded="true" />
+            <element signature="e#1138#1144#1#HTML" expanded="true" />
+            <element signature="e#1425#1431#1#HTML" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#h3#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#a#0;n#h3#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
