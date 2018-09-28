@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="55ceb6fc-9bbb-4776-bfc6-e6b0cf93f9b7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/blocks/formLogin.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blocks/formLoginSuccess.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-    </list>
+    <list default="true" id="55ceb6fc-9bbb-4776-bfc6-e6b0cf93f9b7" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,7 +102,7 @@
         <counts>
           <entry key="css" value="809" />
           <entry key="php" value="4235" />
-          <entry key="txt" value="161" />
+          <entry key="txt" value="200" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -114,7 +110,7 @@
           <entry key="CSS" value="809" />
           <entry key="JavaScript" value="1" />
           <entry key="PHP" value="4233" />
-          <entry key="PLAIN_TEXT" value="161" />
+          <entry key="PLAIN_TEXT" value="200" />
           <entry key="SQL" value="1" />
         </counts>
       </usages-collector>
@@ -125,7 +121,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
+            <state relative-caret-position="54">
               <caret line="33" column="37" selection-start-line="33" selection-start-column="37" selection-end-line="33" selection-end-column="37" />
             </state>
           </provider>
@@ -373,7 +369,7 @@
       <workItem from="1538020584315" duration="19249000" />
       <workItem from="1538048124104" duration="9436000" />
       <workItem from="1538071072099" duration="100000" />
-      <workItem from="1538095565406" duration="19633000" />
+      <workItem from="1538095565406" duration="20000000" />
     </task>
     <task id="LOCAL-00001" summary="Sửa giao diện tùm lum">
       <created>1538044453111</created>
@@ -403,11 +399,18 @@
       <option name="project" value="LOCAL" />
       <updated>1538110492991</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Chức năng Login">
+      <created>1538120006009</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1538120006010</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="110583000" />
+    <option name="totallyTimeSpent" value="110950000" />
   </component>
   <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
@@ -420,7 +423,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49880096" visible="true" weight="0.13918306" />
       <window_info id="Structure" order="1" sideWeight="0.50119907" side_tool="true" weight="0.2881997" />
@@ -488,7 +490,8 @@
     <MESSAGE value="complete tin liên quan ngẫu nhiên chi tiết" />
     <MESSAGE value="update display" />
     <MESSAGE value="Complete search info" />
-    <option name="LAST_COMMIT_MESSAGE" value="Complete search info" />
+    <MESSAGE value="Chức năng Login" />
+    <option name="LAST_COMMIT_MESSAGE" value="Chức năng Login" />
   </component>
   <component name="editorHistoryManager">
     <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/mysqli/mysqli.php">
@@ -745,7 +748,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
+        <state relative-caret-position="54">
           <caret line="33" column="37" selection-start-line="33" selection-start-column="37" selection-end-line="33" selection-end-column="37" />
         </state>
       </provider>
