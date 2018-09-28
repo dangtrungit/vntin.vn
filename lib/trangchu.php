@@ -94,6 +94,7 @@ function QuangCao($vitri)
 
     return mysqli_query($conn, $qr);
 }
+
 /*lấy tất cả danh sách thể loại*/
 function DanhSachTheLoai()
 {
@@ -102,7 +103,8 @@ function DanhSachTheLoai()
 
     return mysqli_query($conn, $qr);
 }
- /*lấy chi tiết loại tin qua idTL*/
+
+/*lấy chi tiết loại tin qua idTL*/
 function ChitietLoaiTin($idTL)
 {
     require("dbCon.php");
@@ -110,6 +112,7 @@ function ChitietLoaiTin($idTL)
 
     return mysqli_query($conn, $qr);
 }
+
 /*Lấy danh sách tin theo loại tin by idLT*/
 function DanhSachTin_TheoLoaiTin($idLT)
 {
@@ -126,6 +129,7 @@ function DanhSachTin_TheoLoaiTin_PhanTrang($idLT)
 
     return mysqli_query($conn, $qr);
 }
+
 /*get Title a>>b>>c*/
 function breadCrum($idLT)
 {
@@ -134,6 +138,7 @@ function breadCrum($idLT)
 
     return mysqli_query($conn, $qr);
 }
+
 /*lấy chi tiết tin theo idLT*/
 
 function ChiTietTin_TheoIdLoaiTin($idTin)
@@ -145,11 +150,32 @@ function ChiTietTin_TheoIdLoaiTin($idTin)
 }
 
 
-function DanhSachTin_NgauNhien_CungLoai($idTin,$idLT)
+function DanhSachTin_NgauNhien_CungLoai($idTin, $idLT)
 {
     require("dbCon.php");
     $qr = "SELECT * FROM tin WHERE idTin<>$idTin AND idLT = $idLT ORDER BY RAND() LIMIT 6";
 
     return mysqli_query($conn, $qr);
 }
+
+
+function CapNhat_SoLan_XemTin($idTin)
+{
+    require("dbCon.php");
+    $qr = "UPDATE tin SET SoLanXem = SoLanXem +1 WHERE  idTin =$idTin";
+
+    mysqli_query($conn, $qr);
+}
+
+
+function TimKiem($tukhoa)
+{
+    require("dbCon.php");
+    mysqli_set_charset($conn, 'UTF8');
+    $qr = "SELECT * FROM tin WHERE TieuDe REGEXP '$tukhoa' ORDER BY idTin DESC LIMIT 8";
+
+
+    return mysqli_query( $conn, $qr );
+}
+
 ?>

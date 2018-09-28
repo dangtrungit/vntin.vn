@@ -22,7 +22,7 @@ if (isset($_GET["p"])) {
     <header>
         <nav>
             <div id="header-vp">
-                <div  id="logo"><img  src="images/logonew.gif"/></div>
+                <div id="logo"><img src="images/logonew.gif"/></div>
                 <div style="margin-left: 180px ; align-content: space-around">
                     <!--block/menu.php-->
                     <?php
@@ -88,6 +88,9 @@ if (isset($_GET["p"])) {
                     break;
                 case "chitiettin":
                     require "pages/chitiettin.php";
+                    break;
+                case "timkiem":
+                    require "pages/timkiem.php";
                     break;
                 default :
                     require "pages/trangchu.php";

@@ -5,6 +5,7 @@ if (isset($_GET["idTin"])) {
 } else {
     $idTin = 1;
 }
+CapNhat_SoLan_XemTin($idTin);
 $tinchitiet = ChiTietTin_TheoIdLoaiTin($idTin);
 
 $row = mysqli_fetch_array($tinchitiet);

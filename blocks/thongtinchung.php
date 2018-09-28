@@ -2,13 +2,17 @@
 <div class="left">
 
 </div>
-<a href="https://www.youtube.com/watch?v=VCYJckDc_fw" target="_blank" class="txt_24h left">KPT</a>
+<a href="https://www.youtube.com/watch?v=VCYJckDc_fw" class="txt_24h left">KPT</a>
 <a href="#" class="img_rss left"><img src="http://st.f3.vnecdn.net/responsive/c/v52/images/graphics/img_rss_2.gif"
                                       alt=""></a>
 <div class="block_search_web left">
-    <form action="" method="get" target="_blank" id="s  earch">
-        <input name="q" value="" maxlength="80" class="txt_input" type="text">
-        <input value="" class="icon_search_web" type="submit">
+    <form action="" method="get" id="search">
+        <div >
+            <input  name="q" value="" maxlength="80" class="txt_input" type="text" placeholder="Tìm kiếm bằng Tiếng Việt..." >
+            <input value="" class="icon_search_web" type="submit"  >
+            <input name="p" type="hidden" value="timkiem"/>
+        </div>
+
     </form>
 </div>
        

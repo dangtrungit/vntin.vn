@@ -6,8 +6,8 @@
     $databasename ="quanlidatabasehotnew";
     $conn = mysqli_connect($hostname,$username,$password,$databasename);
 //    mysqli_select_db("quanlidatabasehotnew");
-//    mysqli_query("SET_NAME 'utf8'");
-mysqli_set_charset($conn, 'UTF8');
+//    mysqli_query($conn,"SET_NAME 'utf8'");
+    mysqli_set_charset($conn, 'UTF8');
     if (!$conn) {
     echo "Error: Unable to connect to MySQL." . PHP_EOL;
     echo "Debugging errno: " . mysqli_connect_errno() . PHP_EOL;

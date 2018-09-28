@@ -195,26 +195,35 @@ ul {
 #midheader-vp #right .icon_search_web {
     border: none;
     background: url("../images/icon_search_web.gif") no-repeat scroll left top transparent;
-    border-bottom: 1px solid #C0C0C0;
-    border-right: 1px solid #C0C0C0;
-    border-top: 1px solid #C0C0C0;
-    cursor: pointer;
+    /*border-bottom: 2px solid #C0C0C0;*/
+    /*border-right: 2px solid #C0C0C0;*/
+    /*border-top: 2px solid #C0C0C0;*/
+    /*cursor: pointer;*/
+    background-position: center;
     float: left;
-    height: 20px;
-    width: 20px;
-    margin-left: -2px
+    height: 40px;
+    z-index: 1;
+    width: 50px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+    /*align-content: center;*/
+    margin: -10px 0px 0px -50px;
 }
 
 #midheader-vp #right .txt_input {
     background: none repeat scroll 0 0 #FFFFFF;
     float: left;
     height: 18px;
-    padding: 0 5px 0 4px;
-    width: 165px;
-    border-bottom: 1px solid #C0C0C0;
-    border-left: 1px solid #C0C0C0;
-    border-top: 1px solid #C0C0C0;
-    float: left
+    margin: -10px 0px 0px 0px;
+    /*padding-left: 60px;*/
+    width: 300px;
+    border: 2px solid #069;
+    float: left;
+    border-radius: 20px;
+    padding: 10px 0px 10px 10px;
+    /*box-shadow: 5px 5px 5px #666;*/
+
 }
 
 #midheader-vp #right .txt_24h {
