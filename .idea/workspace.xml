@@ -2,14 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="55ceb6fc-9bbb-4776-bfc6-e6b0cf93f9b7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/pages/timkiem.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blocks/thongtinchung.php" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/thongtinchung.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/layout.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/layout.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blocks/formLogin.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blocks/formLoginSuccess.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/dbCon.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/dbCon.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/trangchu.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/trangchu.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/chitiettin.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/chitiettin.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -89,8 +84,9 @@
         <counts>
           <entry key="css" value="4" />
           <entry key="ent" value="1" />
+          <entry key="formLoginSuccess" value="1" />
           <entry key="gif" value="1" />
-          <entry key="php" value="49" />
+          <entry key="php" value="56" />
           <entry key="rnc" value="3" />
           <entry key="sql" value="2" />
         </counts>
@@ -100,7 +96,8 @@
           <entry key="CSS" value="4" />
           <entry key="DTD" value="1" />
           <entry key="Image" value="1" />
-          <entry key="PHP" value="49" />
+          <entry key="PHP" value="56" />
+          <entry key="PLAIN_TEXT" value="1" />
           <entry key="RNG Compact" value="3" />
           <entry key="SQL" value="2" />
         </counts>
@@ -108,16 +105,16 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="css" value="809" />
-          <entry key="php" value="3338" />
-          <entry key="txt" value="137" />
+          <entry key="php" value="4235" />
+          <entry key="txt" value="161" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="809" />
           <entry key="JavaScript" value="1" />
-          <entry key="PHP" value="3336" />
-          <entry key="PLAIN_TEXT" value="137" />
+          <entry key="PHP" value="4233" />
+          <entry key="PLAIN_TEXT" value="161" />
           <entry key="SQL" value="1" />
         </counts>
       </usages-collector>
@@ -126,37 +123,28 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/css/layout.css">
+        <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="59">
-              <caret line="210" column="15" selection-start-line="210" selection-start-column="15" selection-end-line="210" selection-end-column="15" />
+            <state relative-caret-position="234">
+              <caret line="33" column="37" selection-start-line="33" selection-start-column="37" selection-end-line="33" selection-end-column="37" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/trangchu.php">
+        <entry file="file://$PROJECT_DIR$/blocks/formLogin.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="186">
-              <caret line="174" column="86" selection-start-line="174" selection-start-column="86" selection-end-line="174" selection-end-column="86" />
+            <state relative-caret-position="324">
+              <caret line="18" column="20" lean-forward="true" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/blocks/thongtinchung.php">
+        <entry file="file://$PROJECT_DIR$/blocks/formLoginSuccess.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="10" column="69" selection-start-line="10" selection-start-column="60" selection-end-line="10" selection-end-column="69" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pages/timkiem.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="4" column="19" lean-forward="true" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
+            <state relative-caret-position="90">
+              <caret line="5" selection-start-line="5" selection-end-line="5" />
             </state>
           </provider>
         </entry>
@@ -188,13 +176,13 @@
       <find>.title a</find>
       <find>news</find>
       <find>title</find>
-      <find>txt_input</find>
       <find>icon_search</find>
       <find>txt</find>
       <find>img_rss</find>
       <find>txt_24h</find>
       <find>left</find>
       <find>txt_timer</find>
+      <find>txt_input</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -219,12 +207,14 @@
         <option value="$PROJECT_DIR$/pages/tintrongloai.php" />
         <option value="$PROJECT_DIR$/pages/trangchu.php" />
         <option value="$PROJECT_DIR$/pages/chitiettin.php" />
-        <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/lib/dbCon.php" />
         <option value="$PROJECT_DIR$/pages/timkiem.php" />
         <option value="$PROJECT_DIR$/lib/trangchu.php" />
         <option value="$PROJECT_DIR$/blocks/thongtinchung.php" />
         <option value="$PROJECT_DIR$/css/layout.css" />
+        <option value="$PROJECT_DIR$/blocks/formLogin.php" />
+        <option value="$PROJECT_DIR$/blocks/formLoginSuccess.php" />
+        <option value="$PROJECT_DIR$/index.php" />
       </list>
     </option>
   </component>
@@ -318,6 +308,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\vntin.com\blocks" />
       <recent name="C:\xampp\htdocs\khoapham.vn\upload\quangcao" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -382,7 +373,7 @@
       <workItem from="1538020584315" duration="19249000" />
       <workItem from="1538048124104" duration="9436000" />
       <workItem from="1538071072099" duration="100000" />
-      <workItem from="1538095565406" duration="10675000" />
+      <workItem from="1538095565406" duration="19633000" />
     </task>
     <task id="LOCAL-00001" summary="Sửa giao diện tùm lum">
       <created>1538044453111</created>
@@ -405,11 +396,18 @@
       <option name="project" value="LOCAL" />
       <updated>1538064692710</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Complete search info">
+      <created>1538110492991</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1538110492991</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="101625000" />
+    <option name="totallyTimeSpent" value="110583000" />
   </component>
   <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
@@ -435,7 +433,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.23349437" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" visible="true" weight="0.32850242" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32850242" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="PHP-CGI Server" order="10" />
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.32850242" />
@@ -489,7 +487,8 @@
     <MESSAGE value="Sửa giao diện tùm lum" />
     <MESSAGE value="complete tin liên quan ngẫu nhiên chi tiết" />
     <MESSAGE value="update display" />
-    <option name="LAST_COMMIT_MESSAGE" value="update display" />
+    <MESSAGE value="Complete search info" />
+    <option name="LAST_COMMIT_MESSAGE" value="Complete search info" />
   </component>
   <component name="editorHistoryManager">
     <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/mysqli/mysqli.php">
@@ -664,20 +663,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pages/chitiettin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="29" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="90" column="26" selection-start-line="90" selection-start-column="26" selection-end-line="90" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pages/tintrongloai.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1278">
@@ -706,13 +691,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/trangchu.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="174" column="86" selection-start-line="174" selection-start-column="86" selection-end-line="174" selection-end-column="86" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/blocks/thongtinchung.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -723,7 +701,7 @@
     <entry file="file://$PROJECT_DIR$/pages/timkiem.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
-          <caret line="4" column="19" lean-forward="true" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
+          <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
         </state>
       </provider>
     </entry>
@@ -731,6 +709,44 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="59">
           <caret line="210" column="15" selection-start-line="210" selection-start-column="15" selection-end-line="210" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/chitiettin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="122">
+          <caret line="71" column="34" selection-start-line="71" selection-start-column="34" selection-end-line="71" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/trangchu.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="302">
+          <caret line="138" column="24" selection-start-line="138" selection-start-column="24" selection-end-line="138" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blocks/formLoginSuccess">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blocks/formLoginSuccess.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blocks/formLogin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="18" column="20" lean-forward="true" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="33" column="37" selection-start-line="33" selection-start-column="37" selection-end-line="33" selection-end-column="37" />
         </state>
       </provider>
     </entry>
