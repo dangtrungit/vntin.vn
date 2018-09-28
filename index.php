@@ -9,37 +9,61 @@ if (isset($_GET["p"])) {
     $p = "";
 }
 ?>
+
 <!--Kiem tra login-->
 <?php
+$kq = null;
 if (isset($_POST["btnLogin"])) {
-    $username = $_POST["txtUs"];
-    $password = $_POST["txtPw"];
-    $password = md5($password);
-    //làm sạch thông tin, xóa bỏ các tag html, ký tự đặc biệt
-    //mà người dùng cố tình thêm vào để tấn công theo phương thức sql injection
-    $username = strip_tags($username);
-    $username = addslashes($username);
-    $password = strip_tags($password);
-    $password = addslashes($password);
+    if ($_POST['txtUs'] == NULL || $_POST['txtPw'] == NULL) {
+        $kq = "Username hoặc Password không được để trống !";
+    } else {
+
+
+        $username = $_POST["txtUs"];
+        $password = $_POST["txtPw"];
+        $password = md5($password);
+        $sql = "SELECT * FROM users WHERE Username = '$username' AND Password = '$password'";
+        /*tai khoan*/
+        $sqluser = "SELECT * FROM users WHERE Username = '$username'";
+
+        $query = mysqli_query($conn, $sql);
+        /*qr user*/
+        $queryuser = mysqli_query($conn, $sqluser);
+
+
+//    làm sạch thông tin, xóa bỏ các tag html, ký tự đặc biệt
+//    mà người dùng cố tình thêm vào để tấn công theo phương thức sql injection
+        $username = strip_tags($username);
+        $username = addslashes($username);
+        $password = strip_tags($password);
+        $password = addslashes($password);
+
+
+        if (mysqli_num_rows($query) > 0) {
+            $row = mysqli_fetch_array($query);
+            /*luu dang nhap vao SESSION*/
+            $_SESSION['idUser'] = $row['idUser'];
+            $_SESSION['Username'] = $row['Username'];
+            $_SESSION['HoTen'] = $row['HoTen'];
+            $_SESSION['idGroup'] = $row['idGroup'];
+//            $kq="Tài khoản hoặc mật khẩu không đúng!";
+
+        } else {
+
+            if (mysqli_num_rows($queryuser) < 1) {
+                $kq = "Tài khoản chưa đăng kí!";
+            } else {
+                $kq = "Mật khẩu nhập không đúng!";
+            }
+
+        }
+    }
+
 
 //    if ($username == "" || $password=""){
 //
 //        echo "Username hoặc Password không được để trống!";
 //    }else {
-    $sql = "SELECT * FROM users WHERE Username = '$username' AND Password = '$password'";
-    $query = mysqli_query($conn, $sql);
-
-    if (mysqli_num_rows($query) == 1) {
-        $row = mysqli_fetch_array($query);
-        /*luu dang nhap vao SESSION*/
-        $_SESSION['idUser'] = $row['idUser'];
-        $_SESSION['Username'] = $row['Username'];
-        $_SESSION['HoTen'] = $row['HoTen'];
-        $_SESSION['idGroup'] = $row['idGroup'];
-
-    }else{
-
-    }
 
 
 }
@@ -151,12 +175,17 @@ if (isset($_POST["btnLogout"])) {
             if (!isset($_SESSION["idUser"])) {
                 require "blocks/formLogin.php";
 
-
             } else {
                 require "blocks/formLoginSuccess.php";
+
             }
 
             ?>
+            <span style="color: #990000">
+                <?php
+                echo $kq;
+                ?>
+            </span>
             <?php
             require "blocks/cot_phai.php";
             ?>

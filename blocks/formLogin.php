@@ -1,4 +1,5 @@
- <form method="POST">
+
+<form method="POST">
         <fieldset>
             <legend>
                 Đăng nhập
@@ -6,7 +7,11 @@
             <table>
                 <tr>
                     <td>Username</td>
-                    <td><input type="text" name="txtUs" id="txtUs"></td>
+                    <td><input type="text" name="txtUs" id="txtUs">
+<!--                        --><?php
+//                        echo $_GET['kq']
+//                        ?>
+                    </td>
                 </tr>
                 <tr>
                     <td>Password</td>
@@ -16,6 +21,7 @@
                     <td colspan="2" align="center"><input type="submit" name="btnLogin" id="btnLogin" value="Đăng nhập">
                     </td>
                 </tr>
+
             </table>
         </fieldset>
 

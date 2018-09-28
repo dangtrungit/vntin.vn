@@ -1,13 +1,24 @@
-<form method="POST">
 
-        <table>
-            <tr>
-                <td colspan="2" align="center"><input type="submit" name="btnLogout" value="Thoát">
+<div style="display: flex;
+    align-items: center;
+    justify-content: center;" >
+    <div>
+        <h1 > Xin Chào <?php echo $_SESSION["HoTen"];?> !
 
-                </td>
-            </tr>
-        </table>
+        </h1>
+
+        <form style="padding-left: 40%" method="POST">
+            <table>
+                <tr>
+                  <input type="submit" name="btnLogout" value="Thoát">
 
 
-</form>
+                </tr>
+            </table>
+
+        </form>
+    </div>
+
+</div>
+
 
