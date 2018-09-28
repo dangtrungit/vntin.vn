@@ -1,4 +1,5 @@
 <?php
+session_start();
 require "lib/dbCon.php";
 require "lib/trangchu.php";
 if (isset($_GET["p"])) {
@@ -6,6 +7,51 @@ if (isset($_GET["p"])) {
 
 } else {
     $p = "";
+}
+?>
+<!--Kiem tra login-->
+<?php
+if (isset($_POST["btnLogin"])) {
+    $username = $_POST["txtUs"];
+    $password = $_POST["txtPw"];
+    $password = md5($password);
+    //làm sạch thông tin, xóa bỏ các tag html, ký tự đặc biệt
+    //mà người dùng cố tình thêm vào để tấn công theo phương thức sql injection
+    $username = strip_tags($username);
+    $username = addslashes($username);
+    $password = strip_tags($password);
+    $password = addslashes($password);
+
+//    if ($username == "" || $password=""){
+//
+//        echo "Username hoặc Password không được để trống!";
+//    }else {
+    $sql = "SELECT * FROM users WHERE Username = '$username' AND Password = '$password'";
+    $query = mysqli_query($conn, $sql);
+
+    if (mysqli_num_rows($query) == 1) {
+        $row = mysqli_fetch_array($query);
+        /*luu dang nhap vao SESSION*/
+        $_SESSION['idUser'] = $row['idUser'];
+        $_SESSION['Username'] = $row['Username'];
+        $_SESSION['HoTen'] = $row['HoTen'];
+        $_SESSION['idGroup'] = $row['idGroup'];
+
+    }else{
+
+    }
+
+
+}
+?>
+
+<?php
+if (isset($_POST["btnLogout"])) {
+    unset($_SESSION['idUser']);
+    unset($_SESSION['Username']);
+    unset($_SESSION['HoTen']);
+    unset($_SESSION['idGroup']);
+
 }
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
@@ -101,6 +147,16 @@ if (isset($_GET["p"])) {
         </div>
         <div id="content-right">
             <!--blocks/cot_phai.php-->
+            <?php
+            if (!isset($_SESSION["idUser"])) {
+                require "blocks/formLogin.php";
+
+
+            } else {
+                require "blocks/formLoginSuccess.php";
+            }
+
+            ?>
             <?php
             require "blocks/cot_phai.php";
             ?>
