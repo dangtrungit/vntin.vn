@@ -85,6 +85,7 @@ if (isset($_POST["btnLogout"])) {
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title>VNTin</title>
     <link rel="stylesheet" type="text/css" href="css/layout.css"/>
+    <link rel="shortcut icon" type="image/png" href="images/logonew.gif"/>
 </head>
 
 <body>

@@ -81,7 +81,7 @@ function TenLoaiTin($idLT)
 {
     require("dbCon.php");
     //        $con = mysqli_connect("localhost","root","","quanlidatabasehotnew");
-    $qr = "SELECT Ten FROM loaitin WHERE idLT = $idLT";
+    $qr = "SELECT Ten FROM loaitin WHERE idLT = '$idLT'";
     $loaitin = mysqli_query($conn, $qr);
     $row = mysqli_fetch_array($loaitin);
     return $row['Ten'];
@@ -99,7 +99,7 @@ function QuangCao($vitri)
 function DanhSachTheLoai()
 {
     require("dbCon.php");
-    $qr = "SELECT * FROM theloai";
+    $qr = "SELECT * FROM theloai WHERE AnHien =1";
 
     return mysqli_query($conn, $qr);
 }
@@ -108,7 +108,7 @@ function DanhSachTheLoai()
 function ChitietLoaiTin($idTL)
 {
     require("dbCon.php");
-    $qr = " SELECT * FROM `loaitin` WHERE idTL=$idTL";
+    $qr = " SELECT * FROM `loaitin` WHERE idTL='$idTL' ";
 
     return mysqli_query($conn, $qr);
 }

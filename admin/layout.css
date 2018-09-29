@@ -1,0 +1,75 @@
+#hangtieude {
+    border-radius: 10px;
+    background-color: #007c7a; color: #FFFFFF;
+    font-size: 24px;
+    padding: 10px;
+    font-weight:bold;
+}
+#hangtieude button{
+    border-radius: 10px;
+    background-color: #007c7a; color: #FFFFFF;
+    font-size: 24px;
+    padding: 10px;
+    font-weight:bold;
+}
+
+
+#hangmenu{
+    /*flex: content-box;*/
+    
+}
+#hangmenu a {
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 0px #b6bdb8;
+
+    margin: 10px;
+    width: 150px;
+    background-color: #007c7a;
+    color: #FFFFFF;
+    font-size: 20px;
+    padding: 10px;
+    display: block;
+    text-align: center;
+    float: left;
+}
+#hangmenu a:hover{
+    background-color: #ff8400;
+
+}
+#buttonthem {
+
+}
+#buttonthem a{
+    margin: 10px;
+    width: 150px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 0px #b6bdb8;
+        /*width: 150px;*/
+    background-color: #007c7a;
+    color: #FFFFFF;
+    font-size: 20px;
+    padding: 10px;
+    display: block;
+
+}
+#buttonthem a:hover{
+    background-color: #ff8400;
+
+}
+#buttonthem button{
+    margin: 10px;
+    width: 150px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 0px #b6bdb8;
+    /*width: 150px;*/
+    background-color: #007c7a;
+    color: #FFFFFF;
+    font-size: 20px;
+    padding: 10px;
+    display: block;
+
+}
+#buttonthem button:hover{
+    background-color: #ff8400;
+
+}
