@@ -14,7 +14,20 @@ function DanhSachTheLoaiChiTiet($idTL){
     $row = mysqli_query($conn,$qr);
     return mysqli_fetch_array($row);
 }
+/*Quan lí Loại TIn*/
+function LoaiTinChiTiet($idLT){
+    require "dbCon.php";
 
+    $qr = "SELECT * FROM loaitin WHERE idLT = '$idLT'";
+    $row = mysqli_query($conn,$qr);
+    return mysqli_fetch_array($row);
+}
+function DanhSachLoaiTin(){
+    require "dbCon.php";
+
+    $qr = "SELECT * FROM theloai,loaitin WHERE theloai.idTL = loaitin.idTL ORDER BY  idLT DESC";
+    return mysqli_query($conn,$qr);
+}
 function stripUnicode($str){
     if(!$str) return false;
     $unicode = array(

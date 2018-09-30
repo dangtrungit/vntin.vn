@@ -5,9 +5,9 @@
 //    if (!isset($_SESSION['idUser']) && !isset($_SESSION['idGroup'])==1){
 //
 //    }
-(!isset($_SESSION['idUser']) && !isset($_SESSION['idGroup'])==1) ? header("location:../listTheLoai.php"):'';
-require "../lib/dbCon.php";
-require "../lib/quantri.php";
+//(!isset($_SESSION['idUser']) && !isset($_SESSION['idGroup'])==1) ? header("location:../listTheLoai.php"):'';
+require "../../lib/dbCon.php";
+require "../../lib/quantri.php";
 //echo  stripUnicode("à anh yêu");
 
 ?>
@@ -18,7 +18,7 @@ require "../lib/quantri.php";
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title>Quản trị VNTin</title>
-    <link rel="stylesheet" type="text/css" href="./layout.css"/>
+    <link rel="stylesheet" type="text/css" href="../layout.css"/>
 </head>
 
 <body>
@@ -28,7 +28,7 @@ require "../lib/quantri.php";
             TRANG QUẢN TRỊ
         </td>
     </tr>
-    <tr ><td align="center" id="hangmenu"><?php require "menu.php";?> </td> </tr>
+    <tr ><td align="center" id="hangmenu"><?php require "menutheloai.php";?> </td> </tr>
 
 
 </table>
@@ -58,8 +58,8 @@ require "../lib/quantri.php";
             <td>{TenTL_KhongDau}</td>
             <td>{ThuTu}</td>
             <td>{AnHien}</td>
-            <td id="hangmenu"><a href="suaTheLoai.php?idTL={idTL}">Sửa</a> - <a
-                        href="xoaTheLoai.php?idTL={idTL}">Xóa</a></td>
+            <td id="hangmenu"><a href="suaTheLoai.php?idTL={idTL}">Sửa</a> - <a onclick="return confirm('Bạn có muốn xóa không?')"
+                                                                                href="xoaTheLoai.php?idTL={idTL}">Xóa</a></td>
 
         </tr>
         <?php

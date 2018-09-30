@@ -99,7 +99,7 @@ function QuangCao($vitri)
 function DanhSachTheLoai()
 {
     require("dbCon.php");
-    $qr = "SELECT * FROM theloai WHERE AnHien =1";
+    $qr = "SELECT * FROM theloai WHERE AnHien =1 ORDER BY ThuTu ASC ";
 
     return mysqli_query($conn, $qr);
 }

@@ -15,8 +15,8 @@
 
 
 #hangmenu{
-    /*flex: content-box;*/
-    
+    display: flex;
+    justify-content: center;
 }
 #hangmenu a {
     border-radius: 10px;

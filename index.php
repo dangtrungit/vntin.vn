@@ -59,13 +59,6 @@ if (isset($_POST["btnLogin"])) {
         }
     }
 
-
-//    if ($username == "" || $password=""){
-//
-//        echo "Username hoặc Password không được để trống!";
-//    }else {
-
-
 }
 ?>
 

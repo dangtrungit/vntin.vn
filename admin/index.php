@@ -28,7 +28,7 @@ require "../lib/quantri.php";
             TRANG QUẢN TRỊ
         </td>
     </tr>
-    <tr><td align="center" id="hangmenu" "><?php require "menu.php";?></td> </tr>
+    <tr ><td id="hangmenu" "><?php require "menu.php";?></td> </tr>
 
 </table>
 
