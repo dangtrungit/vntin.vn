@@ -5,7 +5,9 @@
 //    if (!isset($_SESSION['idUser']) && !isset($_SESSION['idGroup'])==1){
 //
 //    }
-//(!isset($_SESSION['idUser']) && !isset($_SESSION['idGroup'])==1) ? header("location:../listTheLoai.php"):'';
+
+(!isset($_SESSION['idUser']) && !isset($_SESSION['idGroup'])==1) ? header("location:../index.php"):'';
+
 require "../../lib/dbCon.php";
 require "../../lib/quantri.php";
 //echo  stripUnicode("à anh yêu");

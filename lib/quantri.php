@@ -15,6 +15,14 @@ function DanhSachTheLoaiChiTiet($idTL){
     return mysqli_fetch_array($row);
 }
 /*Quan lí Loại TIn*/
+
+function DanhSachLoaiTin(){
+    require "dbCon.php";
+
+    $qr = "SELECT * FROM theloai,loaitin WHERE theloai.idTL = loaitin.idTL ORDER BY  idLT DESC";
+    return mysqli_query($conn,$qr);
+}
+
 function LoaiTinChiTiet($idLT){
     require "dbCon.php";
 
@@ -22,12 +30,20 @@ function LoaiTinChiTiet($idLT){
     $row = mysqli_query($conn,$qr);
     return mysqli_fetch_array($row);
 }
-function DanhSachLoaiTin(){
+/*Quan lí  TIn*/
+function DanhSachTin(){
     require "dbCon.php";
 
-    $qr = "SELECT * FROM theloai,loaitin WHERE theloai.idTL = loaitin.idTL ORDER BY  idLT DESC";
+    $qr = "SELECT tin.*,TenTL,Ten FROM tin,theloai,loaitin WHERE tin.idTL = theloai.idTL AND tin.idLT = loaitin.idLT ORDER BY  idTin DESC LIMIT 0,20";
     return mysqli_query($conn,$qr);
 }
+function DanhSachTinChiTiet($idTin){
+    require "dbCon.php";
+    $qr = "SELECT * FROM tin WHERE idTin='$idTin'";
+    $row= mysqli_query($conn,$qr);
+    return mysqli_fetch_array($row);
+}
+/*chuyen đổi dấu*/
 function stripUnicode($str){
     if(!$str) return false;
     $unicode = array(
@@ -77,6 +93,17 @@ function changeTitle($str){
     $str = mb_convert_case($str,MB_CASE_TITLE,'utf-8');
 
     $str=str_replace(' ','-',$str);
+    return $str;
+};
+function changeTitle1($str){
+    $str = trim($str);
+    if ($str=="") return "";
+    $str = str_replace('"','',$str);
+    $str = str_replace("'",'',$str);
+    $str = stripUnicode($str);
+    $str = mb_convert_case($str,MB_CASE_TITLE,'utf-8');
+
+//    $str=str_replace('-',' ',$str);
     return $str;
 };
 

@@ -20,7 +20,7 @@ $idLT = $row['idLT']
 <!--    --><?php
 //    echo $row['TomTat']
 //    ?><!--</div>-->
-<div class="chitiet" style="font-size: 18px;letter-spacing: 0.5px;">
+<div class="chitiet" style="font-size: 18px;letter-spacing: 0.5px; height: auto">
 
     <!--noi dung-->
     <?php

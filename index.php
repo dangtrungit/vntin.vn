@@ -165,16 +165,19 @@ if (isset($_POST["btnLogout"])) {
         </div>
         <div id="content-right">
             <!--blocks/cot_phai.php-->
-            <?php
-            if (!isset($_SESSION["idUser"])) {
-                require "blocks/formLogin.php";
+            <div >
+                <?php
+                if (!isset($_SESSION["idUser"])) {
+                    require "blocks/formLogin.php";
 
-            } else {
-                require "blocks/formLoginSuccess.php";
+                } else {
+                    require "blocks/formLoginSuccess.php";
 
-            }
+                }
 
-            ?>
+                ?>
+            </div>
+
             <span style="color: #990000">
                 <?php
                 echo $kq;

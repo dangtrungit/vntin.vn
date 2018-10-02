@@ -5,6 +5,8 @@
 //    if (!isset($_SESSION['idUser']) && !isset($_SESSION['idGroup'])==1){
 //
 //    }
+(!isset($_SESSION['idUser']) && !isset($_SESSION['idGroup'])==1) ? header("location:../index.php"):'';
+
 //(!isset($_SESSION['idUser']) && !isset($_SESSION['idGroup'])==1) ? header("location:../listTheLoai.php"):'';
 require "../../lib/dbCon.php";
 require "../../lib/quantri.php";

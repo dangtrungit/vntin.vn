@@ -167,15 +167,57 @@ function CapNhat_SoLan_XemTin($idTin)
     mysqli_query($conn, $qr);
 }
 
+function ham_loc_dau($st)
+{
+    $codau = array("à", "á", "ạ", "ả", "ã", "â", "ầ", "ấ", "ậ", "ẩ", "ẫ", "ă",
+        "ằ", "ắ", "ặ", "ẳ", "ẵ", "è", "é", "ẹ", "ẻ", "ẽ", "ê", "ề"
+    , "ế", "ệ", "ể", "ễ",
+        "ì", "í", "ị", "ỉ", "ĩ",
+        "ò", "ó", "ọ", "ỏ", "õ", "ô", "ồ", "ố", "ộ", "ổ", "ỗ", "ơ"
+    , "ờ", "ớ", "ợ", "ở", "ỡ",
+        "ù", "ú", "ụ", "ủ", "ũ", "ư", "ừ", "ứ", "ự", "ử", "ữ",
+        "ỳ", "ý", "ỵ", "ỷ", "ỹ",
+        "đ",
+        "À", "Á", "Ạ", "Ả", "Ã", "Â", "Ầ", "Ấ", "Ậ", "Ẩ", "Ẫ", "Ă"
+    , "Ằ", "Ắ", "Ặ", "Ẳ", "Ẵ",
+        "È", "É", "Ẹ", "Ẻ", "Ẽ", "Ê", "Ề", "Ế", "Ệ", "Ể", "Ễ",
+        "Ì", "Í", "Ị", "Ỉ", "Ĩ",
+        "Ò", "Ó", "Ọ", "Ỏ", "Õ", "Ô", "Ồ", "Ố", "Ộ", "Ổ", "Ỗ", "Ơ"
+    , "Ờ", "Ớ", "Ợ", "Ở", "Ỡ",
+        "Ù", "Ú", "Ụ", "Ủ", "Ũ", "Ư", "Ừ", "Ứ", "Ự", "Ử", "Ữ",
+        "Ỳ", "Ý", "Ỵ", "Ỷ", "Ỹ",
+        "Đ", " ");
+
+    $khongdau = array("a", "a", "a", "a", "a", "a", "a", "a", "a", "a", "a"
+    , "a", "a", "a", "a", "a", "a",
+        "e", "e", "e", "e", "e", "e", "e", "e", "e", "e", "e",
+        "i", "i", "i", "i", "i",
+        "o", "o", "o", "o", "o", "o", "o", "o", "o", "o", "o", "o"
+    , "o", "o", "o", "o", "o",
+        "u", "u", "u", "u", "u", "u", "u", "u", "u", "u", "u",
+        "y", "y", "y", "y", "y",
+        "d",
+        "A", "A", "A", "A", "A", "A", "A", "A", "A", "A", "A", "A"
+    , "A", "A", "A", "A", "A",
+        "E", "E", "E", "E", "E", "E", "E", "E", "E", "E", "E",
+        "I", "I", "I", "I", "I",
+        "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"
+    , "O", "O", "O", "O", "O",
+        "U", "U", "U", "U", "U", "U", "U", "U", "U", "U", "U",
+        "Y", "Y", "Y", "Y", "Y",
+        "D", "_");
+    return str_replace($codau, $khongdau, $st);
+}
 
 function TimKiem($tukhoa)
 {
+
     require("dbCon.php");
-    mysqli_set_charset($conn, 'UTF8');
-    $qr = "SELECT * FROM tin WHERE TieuDe REGEXP '$tukhoa' ORDER BY idTin DESC LIMIT 8";
+
+    $qr1 = "SELECT * FROM tin WHERE Search_nonUnicode REGEXP '$tukhoa' ORDER BY idTin DESC LIMIT 8";
+    return mysqli_query($conn, $qr1);
 
 
-    return mysqli_query( $conn, $qr );
 }
 
 ?>
