@@ -55,21 +55,21 @@
 <div id="smoothmenu1" class="ddsmoothmenu">
 
         <ul>
-            <li><a href="./">Trang Chủ</a></li>
+            <li><a href="trangchu.aspx">Trang Chủ</a></li>
             <?php
             $menu = DanhSachTheLoai();
             while ($row_menu = mysqli_fetch_array($menu)) {
                 $idTL = $row_menu['idTL']
 
                 ?>
-                <li><a href="#"><?php echo $row_menu['TenTL'] ?></a>
+                <li><a href="./"><?php echo $row_menu['TenTL'] ?></a>
 
                     <ul>
                         <?php
                         $menudetail = ChitietLoaiTin($idTL);
                         while ($row_menudetail = mysqli_fetch_array($menudetail)) {
                             ?>
-                            <li><a href="index.php?p=tintrongloai&idLT=<?php echo $row_menudetail['idLT']?>"><?php echo $row_menudetail['Ten'] ?></a></li>
+                            <li><a href="loaitin/<?php echo $row_menudetail['idLT']?>-<?php echo $row_menudetail['Ten_KhongDau']?>.aspx"><?php echo $row_menudetail['Ten'] ?></a></li>
                             <!--<li><a href="#">Sub Item 1.2</a></li>-->
                             <?php
                         }

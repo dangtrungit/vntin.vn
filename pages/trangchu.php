@@ -20,9 +20,9 @@ while ($row = mysqli_fetch_array($theloai)) {
                 while ($rowloaitin = mysqli_fetch_array($loaitin)) {
                     $idLT = $rowloaitin['idLT']
                     ?>
-                    <a href="index.php?p=tintrongloai&idLT=<?php
+                    <a href="chitiet/<?php
                     echo $rowloaitin['idLT']
-                    ?>"><?php
+                    ?>-<?php echo $rowloaitin['Ten_KhongDau'] ?>.aspx"><?php
                         echo $rowloaitin['Ten']
                         ?></a>
                     <?php
@@ -41,7 +41,7 @@ while ($row = mysqli_fetch_array($theloai)) {
             <div class="cat-content">
                 <div class="col1">
                     <div class="news">
-                        <h3 class="title"><a href="index.php?p=chitiettin&=<?php echo md5($row_mottinmoi_theotheloai['idTin']) ?>"><?php echo $row_mottinmoi_theotheloai['TieuDe']; ?></a></h3>
+                        <h3 class="title"><a href="chitiet/<?php echo $row_mottinmoi_theotheloai['idTin'] ?>-<?php echo $row_mottinmoi_theotheloai['TieuDe_KhongDau'] ?>.aspx"><?php echo $row_mottinmoi_theotheloai['TieuDe']; ?></a></h3>
                         <img class="images_news"
                              src="upload/tintuc/<?php echo $row_mottinmoi_theotheloai['urlHinh']; ?>" align="left"/>
                         <div class="des"><?php echo $row_mottinmoi_theotheloai['TomTat']; ?>
@@ -56,7 +56,7 @@ while ($row = mysqli_fetch_array($theloai)) {
 
                     ?>
                     <div class="col2">
-                        <p class="tlq"><a href="index.php?p=chitiettin&idTin=<?php echo $row_mottinmoi_theotheloai_right['idTin'];?>"><?php echo $row_mottinmoi_theotheloai_right['TieuDe']; ?></a>
+                        <p class="tlq"><a href="chitiet/<?php echo $row_mottinmoi_theotheloai_right['idTin'];?>-<?php echo $row_mottinmoi_theotheloai_right['TieuDe_KhongDau'] ?>.aspx"><?php echo $row_mottinmoi_theotheloai_right['TieuDe']; ?></a>
                             </a></p>
                     </div>
                     <?php

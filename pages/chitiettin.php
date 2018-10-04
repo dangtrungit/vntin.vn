@@ -3,7 +3,7 @@ if (isset($_GET["idTin"])) {
     $idTin = $_GET['idTin'];
     settype($idTin, "int");
 } else {
-    $idTin = 1;
+    $idTin = '1';
 }
 CapNhat_SoLan_XemTin($idTin);
 $tinchitiet = ChiTietTin_TheoIdLoaiTin($idTin);
@@ -12,15 +12,15 @@ $row = mysqli_fetch_array($tinchitiet);
 $idLT = $row['idLT']
 ?>
 
-<!--<h1 class="title">-->
-<!--    --><?php
-//    echo $row['TieuDe']
-//    ?><!--</h1>-->
-<!--<div class="des">-->
-<!--    --><?php
-//    echo $row['TomTat']
-//    ?><!--</div>-->
-<div class="chitiet" style="font-size: 18px;letter-spacing: 0.5px; height: auto">
+<h1 class="title">
+    <?php
+    echo $row['TieuDe']
+    ?></h1>
+<div class="des">
+    <?php
+    echo $row['TomTat']
+    ?></div>
+<div class="chitiet" style=" font-size: 18px;letter-spacing: 0.5px; height: auto">
 
     <!--noi dung-->
     <?php
@@ -31,9 +31,12 @@ $idLT = $row['idLT']
 <div class="clear"></div>
 
 <a class="btn_quantam" id="vne-like-anchor-1000000-3023795" href="#" total-like="21"></a>
-<div class="number_count"><span id="like-total-1000000-3023795"><?php
-        echo $row['SoLanXem']
+<div class="number_count"><span id="like-total-1000000-3023795"><?php echo $row['SoLanXem']
         ?></span></div>
+<div align="right">
+    <p>Ngày đăng tin: <strong><?php echo $row['Ngay'];?></strong> </p>
+</div>
+
 <!--face-->
 <!--<div class="page-header">-->
 <!--    <h1>Share Dialog</h1>-->
@@ -81,9 +84,9 @@ $idLT = $row['idLT']
                 ?>
                 <ul>
                     <li>
-                        <a href="index.php?p=chitiettin&idTin=<?php echo $row_ngaunhien['idTin']?>"><img src="upload/tintuc/<?php echo $row_ngaunhien['urlHinh']?>"
+                        <a href="chitiet/<?php echo $row_ngaunhien['idTin']?>-<?php echo $row_ngaunhien['TieuDe_KhongDau'] ?>.aspx"><img src="upload/tintuc/<?php echo $row_ngaunhien['urlHinh']?>"
                                          alt="<?php echo $row_ngaunhien['TieuDe']?>"></a> <br/>
-                        <a class="title" href="index.php?p=chitiettin&idTin=<?php echo $row_ngaunhien['idTin']?>"><?php echo $row_ngaunhien['TieuDe']?></a>
+                        <a class="title" href="chitiet/<?php echo $row_ngaunhien['idTin']?>-<?php echo $row_ngaunhien['TieuDe_KhongDau'] ?>.aspx"><?php echo $row_ngaunhien['TieuDe']?></a>
                         <span class="no_wrap">
                     </li>
 

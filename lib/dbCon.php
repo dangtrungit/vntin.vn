@@ -4,6 +4,10 @@
     $username = "root";
     $password ="";
     $databasename ="quanlidatabasehotnew";
+//    $hostname = "sql206.byethost5.com";
+//    $username = "b5_22793641";
+//    $password ="dungyeuchip0";
+//    $databasename ="b5_22793641_kpt";
     $conn = mysqli_connect($hostname,$username,$password,$databasename);
 //    mysqli_select_db("quanlidatabasehotnew");
 //    mysqli_query($conn,"SET_NAME 'utf8'");

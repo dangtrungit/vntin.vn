@@ -7,7 +7,7 @@
 	<div class="cat">
     	<div class="main-cat">
 
-        	<a href="index.php?p=tintrongloai&idLT=<?php echo $idLT?>"><?php echo TenLoaiTin($idLT)?></a>
+        	<a href="./"><?php echo TenLoaiTin($idLT)?></a>
         </div>
        
         <div class="clear"></div>
@@ -19,7 +19,7 @@
                 $row_tinmoinhat_loaitin_mottin = mysqli_fetch_array($tinmoinhat_loaitin_mottin);
                 ?>
             	<div class="news">
-                <h3 class="title" ><a href="index.php?p=chitiettin&idTin=<?php echo $row_tinmoinhat_loaitin_mottin['idTin']?>"> <?php echo $row_tinmoinhat_loaitin_mottin['TieuDe']?></a></h3>
+                <h3 class="title" ><a href="chitiet/<?php echo $row_tinmoinhat_loaitin_mottin['idTin']?>-<?php echo $row_tinmoinhat_loaitin_mottin['TieuDe_KhongDau'] ?>.aspx"> <?php echo $row_tinmoinhat_loaitin_mottin['TieuDe']?></a></h3>
                   <img class="images_news" src="upload/tintuc/<?php echo $row_tinmoinhat_loaitin_mottin['urlHinh']?>" align="left" />
                     <div class="des"><?php echo $row_tinmoinhat_loaitin_mottin['TomTat']?> </div>
                   
@@ -35,7 +35,7 @@
 
                 while($row_tinmoinhat_loaitin_nhieutin = mysqli_fetch_array($tinmoinhat_loaitin_nhieutin) ) {
                     ?>
-                    <h3 class="tlq"><a href="index.php?p=chitiettin&idTin=<?php echo $row_tinmoinhat_loaitin_nhieutin['idTin']?>"><?php echo $row_tinmoinhat_loaitin_nhieutin['TieuDe']?></a></h3>
+                    <h3 class="tlq"><a href="chitiet/<?php echo $row_tinmoinhat_loaitin_nhieutin['idTin']?>-<?php echo $row_tinmoinhat_loaitin_mottin['TieuDe_KhongDau'] ?>.aspx"><?php echo $row_tinmoinhat_loaitin_nhieutin['TieuDe']?></a></h3>
                     <?php
                 }
                ?>
@@ -57,7 +57,7 @@ $idLT = 3;
     <div class="cat">
         <div class="main-cat">
 
-            <a href="index.php?p=tintrongloai&idLT=<?php echo $idLT?>"><?php echo TenLoaiTin($idLT)?></a>
+            <a href="./"><?php echo TenLoaiTin($idLT)?></a>
         </div>
 
         <div class="clear"></div>
@@ -69,7 +69,7 @@ $idLT = 3;
                 $row_tinmoinhat_loaitin_mottin = mysqli_fetch_array($tinmoinhat_loaitin_mottin);
                 ?>
                 <div class="news">
-                    <h3 class="title" ><a href="index.php?p=chitiettin&idTin=<?php echo $row_tinmoinhat_loaitin_mottin['idTin']?>"> <?php echo $row_tinmoinhat_loaitin_mottin['TieuDe']?></a></h3>
+                    <h3 class="title" ><a href="chitiet/<?php echo $row_tinmoinhat_loaitin_mottin['idTin']?>-<?php echo $row_tinmoinhat_loaitin_mottin['TieuDe_KhongDau'] ?>.aspx"> <?php echo $row_tinmoinhat_loaitin_mottin['TieuDe']?></a></h3>
                     <img class="images_news" src="upload/tintuc/<?php echo $row_tinmoinhat_loaitin_mottin['urlHinh']?>" align="left" />
                     <div class="des"><?php echo $row_tinmoinhat_loaitin_mottin['TomTat']?> </div>
 
@@ -85,7 +85,7 @@ $idLT = 3;
 
                 while($row_tinmoinhat_loaitin_nhieutin = mysqli_fetch_array($tinmoinhat_loaitin_nhieutin) ) {
                     ?>
-                    <h3 class="tlq"><a href="index.php?p=chitiettin&idTin=<?php echo $row_tinmoinhat_loaitin_nhieutin['idTin']?>"><?php echo $row_tinmoinhat_loaitin_nhieutin['TieuDe']?></a></h3>
+                    <h3 class="tlq"><a href="chitiet/<?php echo $row_tinmoinhat_loaitin_nhieutin['idTin']?>-<?php echo $row_tinmoinhat_loaitin_mottin['TieuDe_KhongDau'] ?>.aspx"><?php echo $row_tinmoinhat_loaitin_nhieutin['TieuDe']?></a></h3>
                     <?php
                 }
                 ?>
@@ -108,7 +108,7 @@ $idLT = 1;
     <div class="cat">
         <div class="main-cat">
 
-            <a href="index.php?p=tintrongloai&idLT=<?php echo $idLT?>"><?php echo TenLoaiTin($idLT)?></a>
+            <a href="./"><?php echo TenLoaiTin($idLT)?></a>
         </div>
 
         <div class="clear"></div>
@@ -120,7 +120,7 @@ $idLT = 1;
                 $row_tinmoinhat_loaitin_mottin = mysqli_fetch_array($tinmoinhat_loaitin_mottin);
                 ?>
                 <div class="news">
-                    <h3 class="title" ><a href="index.php?p=chitiettin&idTin=<?php echo $row_tinmoinhat_loaitin_mottin['idTin']?>"> <?php echo $row_tinmoinhat_loaitin_mottin['TieuDe']?></a></h3>
+                    <h3 class="title" ><a href="chitiet/<?php echo $row_tinmoinhat_loaitin_mottin['idTin']?>-<?php echo $row_tinmoinhat_loaitin_mottin['TieuDe_KhongDau'] ?>.aspx"> <?php echo $row_tinmoinhat_loaitin_mottin['TieuDe']?></a></h3>
                     <img class="images_news" src="upload/tintuc/<?php echo $row_tinmoinhat_loaitin_mottin['urlHinh']?>" align="left" />
                     <div class="des"><?php echo $row_tinmoinhat_loaitin_mottin['TomTat']?> </div>
 
@@ -136,7 +136,7 @@ $idLT = 1;
 
                 while($row_tinmoinhat_loaitin_nhieutin = mysqli_fetch_array($tinmoinhat_loaitin_nhieutin) ) {
                     ?>
-                    <h3 class="tlq"><a href="index.php?p=chitiettin&idTin=<?php echo $row_tinmoinhat_loaitin_nhieutin['idTin']?>"><?php echo $row_tinmoinhat_loaitin_nhieutin['TieuDe']?></a></h3>
+                    <h3 class="tlq"><a href="chitiet/<?php echo $row_tinmoinhat_loaitin_nhieutin['idTin']?>-<?php echo $row_tinmoinhat_loaitin_mottin['TieuDe_KhongDau'] ?>.aspx"><?php echo $row_tinmoinhat_loaitin_nhieutin['TieuDe']?></a></h3>
                     <?php
                 }
                 ?>

@@ -28,8 +28,8 @@
                 ?>
                 <li>
 
-                    <a style="color: #F8FFF7" class="mnu_giaoduc" href="index.php?p=tintrongloai&idLT=<?php
-                    echo $row_loaitin['idLT'] ?>"><?php
+                    <a style="color: #F8FFF7" class="mnu_giaoduc" href="loaitin/<?php
+                    echo $row_loaitin['idLT'] ?>-<?php echo $row_loaitin['Ten_KhongDau'] ?>.aspx"><?php
                         echo $row_loaitin['Ten']
                         ?></a>
 

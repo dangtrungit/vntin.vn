@@ -1,0 +1,17 @@
+RewriteEngine On
+#RewriteRule "trangchu.html" "index.php"
+RewriteRule "trangchu.aspx" "index.php"
+RewriteRule "tuyendung/chitiettuyendung.aspx" "index.php"
+RewriteRule "quangcao/lienhequangcao.aspx" "index.php"
+RewriteRule "toasoan/lienhetoasoan.aspx" "index.php"
+#RewriteRule "chitiettin" "index.php?p=chitiettin&idTin=$1&TieuDe_KhongDau=$2"
+
+
+RewriteRule "^chitiet/(.*)-(.*).aspx$" "index.php?p=chitiettin&idTin=$1&TieuDe_KhongDau=$2"
+RewriteRule "^loaitin/(.*)-(.*).aspx$" "index.php?p=tintrongloai&idLT=$1&TenTL_KhongDau=$2"
+#RewriteRule "^timkiem/(.*)-(.*).aspx$" "http://localhost:8888/vntin.com/?search=$1"
+#index.php?q=Dan%20khi%20tai&p=timkiem
+#RewriteRule "^loaitin/(.*)/(.*)-(.*).aspx" "index.php?p=tintrongloai&idLT=$2&trang=$1&Ten_KhongDau=$3"
+#RewriteRule "^(.*)-(.*).aspx$" "index.php?p=chitiettin&=$1&TenTL_KhongDau=$2"
+#RewriteRule "^(.*)-(.*).aspx$" "index.php?p=tintrongloai&idLT=$1&TenTL_KhongDau=$2"
+#-<?php echo $row_tinmoinhat_bontin['TieuDe_KhongDau'] ?>.aspx

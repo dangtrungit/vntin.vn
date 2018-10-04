@@ -54,9 +54,9 @@ $row = mysqli_fetch_array($bc);
                  <div class="col0 col1">
                      <div class="news">
                          <h3>
-                             <a style="font-size: 18px;color: #0e7d83" href="index.php?p=chitiettin&idTin=<?php
+                             <a style="font-size: 18px;color: #0e7d83" href="chitiet/<?php
                              echo $row['idTin']
-                             ?>">
+                             ?>-<?php echo $row['TieuDe_KhongDau'] ?>.aspx">
                                  <div style="margin-bottom: 20px">
                                      <?php
                                      echo $row['TieuDe']

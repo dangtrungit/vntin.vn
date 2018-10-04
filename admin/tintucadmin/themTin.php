@@ -21,7 +21,7 @@ if (isset($_POST["btnthemtin"])) {
     $TieuDe_KhongDau = changeTitle($TieuDe);
     $Search_nonUnicode =  changeTitle1($TieuDe).'
     '.$TieuDe;
-    $TomTat = $_POST['texName'];
+    $TomTat = $_POST['texTomTat'];
 
     /*upload anh*/
 //    if (isset($_POST['uploadclick'])) {
@@ -44,7 +44,7 @@ if (isset($_POST["btnthemtin"])) {
     /*upload anh*/
 
 
-    $Ngay = date("Y-m-d");
+    $Ngay = date("d-m-Y H:i:s");
     $idUser = $_SESSION["idUser"];
 //    settype($ThuTu, "int");
     $Content= $_POST['Content'];
@@ -159,7 +159,7 @@ if (isset($_POST["btnthemtin"])) {
         <!--        <tr > <td>TenTL_KhongDau</td><td><input type="text" name="txttentl_khongdau" id="txttentl_khongdau"/></td></tr>-->
         <tr>
             <td>TomTat</td>
-            <td><textarea id="texName" name="texName" rows="6" cols="50"></textarea></td>
+            <td><textarea id="texTomTat" name="texTomTat" rows="6" cols="50"></textarea></td>
         </tr>
         <tr>
             <td>urlHinh</td>

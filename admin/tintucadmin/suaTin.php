@@ -42,20 +42,20 @@ if (isset($_POST["btnsuatin"])) {
         $loadfile= 'Bạn chưa chọn file upload';
     };
 
-    $Ngay = date("Y-m-d");
+//    $Ngay = date("Y-m-d");
     settype($Ngay, "int");
 
     $Content = $_POST['post_Content'];
     $SoLanXem = $_POST['txtSoLanXem'];
     settype($SoLanXem, "int");
 
-    $TinNoiBat = $_POST['rdtieudekhongdau'];
+    $TinNoiBat = $_POST['rdtinnoibat'];
     settype($TinNoiBat, "int");
 
     $AnHien = $_POST['rdAnHien'];
     settype($AnHien, "int");
 
-    $qr = "UPDATE tin SET TieuDe = '$TieuDe',TieuDe_KhongDau = '$TieuDe_KhongDau',
+    $qr = "UPDATE tin SET TieuDe = '$TieuDe',TieuDe_KhongDau = '$TieuDe_KhongDau',Search_nonUnicode='$Search_nonUnicode',
 TomTat='$TomTat',urlHinh='$urlHinh',Content='$Content',
 SoLanXem='$SoLanXem',TinNoiBat='$TinNoiBat',AnHien='$AnHien' WHERE idTin ='$idTin'";
 
@@ -117,10 +117,10 @@ SoLanXem='$SoLanXem',TinNoiBat='$TinNoiBat',AnHien='$AnHien' WHERE idTin ='$idTi
             <td><input type="file" name="urlHinh" id="urlHinh" value="<?php echo $row_tin['urlHinh'] ?>"/><?php echo $loadfile?></td>
         </tr>
         <!--Ngay-->
-        <tr>
-            <td>Ngay</td>
-            <td><input type="text" name="txtNgay" id="txtNgay" value="<?php echo $row_tin['Ngay'] ?>"/></td>
-        </tr>
+<!--        <tr>-->
+<!--            <td>Ngay</td>-->
+<!--            <td><input type="text" name="txtNgay" id="txtNgay" value="--><?php //echo $row_tin['Ngay'] ?><!--"/></td>-->
+<!--        </tr>-->
 
         <!--Content-->
         <tr>
@@ -141,8 +141,8 @@ SoLanXem='$SoLanXem',TinNoiBat='$TinNoiBat',AnHien='$AnHien' WHERE idTin ='$idTi
         <tr>
             <td>TinNoiBat</td>
             <td>
-                <input <?php if ($row_tin['TinNoiBat'] == 1) echo "checked= 'checked'" ?> type="radio" name="rdtieudekhongdau" id="rdtieudekhongdau" value="1"/>Nổi Bật
-                <input <?php if ($row_tin['TinNoiBat'] == 0) echo "checked= 'checked'" ?> type="radio" name="rdtieudekhongdau" id="rdtieudekhongdau" value="0"/>Bình Thường
+                <input <?php if ($row_tin['TinNoiBat'] == 1) echo "checked= 'checked'" ?> type="radio" name="rdtinnoibat" id="rdtinnoibat" value="1"/>Nổi Bật
+                <input <?php if ($row_tin['TinNoiBat'] == 0) echo "checked= 'checked'" ?> type="radio" name="rdtinnoibat" id="rdtinnoibat" value="0"/>Bình Thường
 
             </td>
         </tr>

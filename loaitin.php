@@ -7,7 +7,6 @@ require 'lib/trangchu.php';
     $loaitin =ChitietLoaiTin($idTL);
     while ($row = mysqli_fetch_array($loaitin)){
 ?>
-
         <option value="<?php echo $row['idLT']?>"><?php
             echo $row['Ten'];
             ?>

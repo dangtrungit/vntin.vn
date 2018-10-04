@@ -1,7 +1,6 @@
 
-
 <?php
-$tukhoa = $_GET['q'];
+$tukhoa = $_GET['search'];
 
     $tintimkiem = TimKiem($tukhoa);
 
@@ -18,10 +17,8 @@ $tukhoa = $_GET['q'];
                         <div class="news">
                             <h3>
 
-                                <a style="font-size: 18px;color: #0e7d83" href="index.php?p=chitiettin&idTin=<?php
-                                echo $row['idTin'];
-
-                                ?>">
+                                <a style="font-size: 18px;color: #0e7d83" href="chitiet/<?php
+                                echo $row['idTin'];?>-<?php echo $row['TieuDe_KhongDau'] ?>.aspx">
                                     <div style="margin-bottom: 20px">
                                         <?php
                                         echo $row['TieuDe'] ;

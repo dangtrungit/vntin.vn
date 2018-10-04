@@ -34,7 +34,7 @@ function LoaiTinChiTiet($idLT){
 function DanhSachTin(){
     require "dbCon.php";
 
-    $qr = "SELECT tin.*,TenTL,Ten FROM tin,theloai,loaitin WHERE tin.idTL = theloai.idTL AND tin.idLT = loaitin.idLT ORDER BY  idTin DESC LIMIT 0,20";
+    $qr = "SELECT tin.*,TenTL,Ten FROM tin,theloai,loaitin WHERE tin.idTL = theloai.idTL AND tin.idLT = loaitin.idLT ORDER BY  idTin DESC LIMIT 20 ";
     return mysqli_query($conn,$qr);
 }
 function DanhSachTinChiTiet($idTin){
@@ -42,6 +42,33 @@ function DanhSachTinChiTiet($idTin){
     $qr = "SELECT * FROM tin WHERE idTin='$idTin'";
     $row= mysqli_query($conn,$qr);
     return mysqli_fetch_array($row);
+}
+/*Tìm kiếm */
+
+function TimKiem($tukhoa)
+{
+
+    require("dbCon.php");
+
+    $qr1 = "SELECT * FROM tin WHERE Search_nonUnicode REGEXP '$tukhoa' ORDER BY idTin DESC LIMIT 8";
+    return mysqli_query($conn, $qr1);
+
+}
+function TimKiemTheoId($idTin)
+{
+    require("dbCon.php");
+
+    $qr1 = "SELECT * FROM tin WHERE idTin REGEXP '$idTin' ORDER BY idTin DESC LIMIT 10";
+    return mysqli_query($conn, $qr1);
+
+}
+function TimKiemTheoTieuDe($Tieude)
+{
+    require("dbCon.php");
+
+    $qr1 = "SELECT * FROM tin WHERE TieuDe REGEXP '$Tieude' ORDER BY idTin DESC LIMIT 10";
+    return mysqli_query($conn, $qr1);
+
 }
 /*chuyen đổi dấu*/
 function stripUnicode($str){
@@ -93,6 +120,12 @@ function changeTitle($str){
     $str = mb_convert_case($str,MB_CASE_TITLE,'utf-8');
 
     $str=str_replace(' ','-',$str);
+    $str=str_replace('/','-',$str);
+    $str=str_replace(':','-',$str);
+    $str=str_replace('[','-',$str);
+    $str=str_replace(']','-',$str);
+    $str=str_replace(',','-',$str);
+    $str=str_replace('?','-',$str);
     return $str;
 };
 function changeTitle1($str){
