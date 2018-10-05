@@ -1,6 +1,6 @@
 <?php
-require 'lib/dbCon.php';
-require 'lib/trangchu.php';
+require '../lib/dbCon.php';
+require '../lib/trangchu.php';
 ?>
 <?php
     $idTL=$_GET['idTL']; settype($idTL,"int");

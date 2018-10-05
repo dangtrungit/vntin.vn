@@ -1,7 +1,6 @@
 
 <?php
 $tukhoa = $_GET['search'];
-
     $tintimkiem = TimKiem($tukhoa);
 
 //echo  $chuoi= changeTitle($tukhoa);

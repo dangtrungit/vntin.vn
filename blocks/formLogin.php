@@ -1,5 +1,5 @@
 
-<form method="POST" style="background-color: #ff8400">
+<form method="POST" id="formLogin" style="background-color: #ff8400" >
         <fieldset>
             <legend>
                 Đăng nhập
@@ -18,8 +18,13 @@
                     <td><input type="password" name="txtPw" id="txtPw" style="width: 85%"></td>
                 </tr>
                 <tr>
-                    <td colspan="2" align="center"><input type="submit" name="btnLogin" id="btnLogin" value="Đăng nhập">
+                    <td  colspan="2" align="center">
+                        <input type="submit" name="btnLogin" id="btnLogin" value="Đăng nhập">
+<!--                        <input type="button" name="btnSignin" id="btnSignin" value="Đăng kí">-->
+
                     </td>
+
+
                 </tr>
 
             </table>

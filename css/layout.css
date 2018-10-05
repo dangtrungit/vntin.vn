@@ -172,6 +172,34 @@ ul {
     height: 5px;
     margin: 5px 0
 }
+/*--------Menu Dang Ki-------*/
+#menuform ul {
+    background: #007c7a;
+    /*list-style-type: none;*/
+    text-align: center;
+    /*width: 200px;*/
+}
+#menuform li {
+    color: #f1f1f1;
+    display: inline-block;
+    width: 49%;
+    height: 30px;
+    line-height: 30px;
+    /*padding-left: 7px;*/
+    padding-left: 0.2px;
+    /*padding-right: 5px;*/
+
+}
+#menuform a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+}
+/*#menuform a:hover {*/
+    /*background: #F1F1F1;*/
+    /*color: #333;*/
+/*}*/
+/*--------*/
 #clockPC{
     color: #EB5100;font-weight: bold;font-size: 25px;
 }

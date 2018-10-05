@@ -2,10 +2,11 @@
 
 ob_start();
 session_start();
-//    if (!isset($_SESSION['idUser']) && !isset($_SESSION['idGroup'])==1){
-//
-//    }
-(!isset($_SESSION['idUser']) && !isset($_SESSION['idGroup'])==1) ? header("location:../index.php"):'';
+if (isset($_SESSION['idUser']) && $_SESSION['idGroup']==1){
+
+}else{
+    header("location:../index.php");
+}
 require "../../lib/dbCon.php";
 require "../../lib/quantri.php";
 //echo  stripUnicode("à anh yêu");
@@ -87,12 +88,12 @@ if (isset($_POST["btnthemtin"])) {
     <script type="text/javascript" src = "ckeditor/ckeditor.js"></script>
     <script type="text/javascript" src = "ckfinder/ckfinder.js"></script>
     <script type="text/javascript" src = "../../jquery-slider-master/js/jquery-2.1.0.min.js"></script>
-    <script type="text/javascript" src = "../../"></script>
+<!--    <script type="text/javascript" src = "../../"></script>-->
     <script>
         $(document).ready(function () {
             $("#idTL").change(function () {
                 var id = $(this).val();
-                $.get("../../loaitin.php",{idTL:id},function (data) {
+                $.get("../../ajax/loaitin.php",{idTL:id},function (data) {
                     $("#idLT").html(data);
                 })
             });
